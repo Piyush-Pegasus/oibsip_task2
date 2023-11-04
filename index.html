@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piyush's Portifolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/b2da944c71.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h2 class="logo"><span>Pi</span>yush.</h2>
+                <!-- <img src="images/logo.jpg" alt="" class="logo"> -->
+                <ul id="sidemenu">
+                    <li><a href="#header"> Home </a></li>
+                    <li><a href="#about">About </a></li>
+                    <li><a href="#services">Services </a></li>
+                    <li><a href="#portfolio">Portfolio </a></li>
+                    <li><a href="#contact">Contact </a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I am <span>Piyush </span> <br>Srivastav from Bharat</h1>
+            </div>
+        </div>
+    </div>
+    <!----------------about----------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/profile-pic (16).png" id="pp">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About me</h1>
+                    <p>I am an enthusiastic third-year B-tech student looking for an opportunity to make use of my
+                        knowledge of data structures and algorithms, competence with cloud computing systems, and
+                        knowledge of web development. Currently, I am learning Data Science. My foundation in
+                        mathematics
+                        and analytical thinking has honed my problem-solving abilities, which I believe are crucial in
+                        the
+                        dynamic world of software engineering. </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>Java , C++ and Python</li>
+                            <li><span>Front-end Web Development</span><br>HTML , CSS and JavaScript</li>
+                            <li><span>Python and Back-end Development</span><br>Flask & Django</li>
+                            <li><span>DevOps</span><br>Amazon AWS , Google Cloud Platform <br>
+                                Automation, Collaboration, Continuous Integration, Deployment, Monitoring.</li>
+                            <li><span>Machine/Deep learning </span><br>Python , TensorFlow , Keras , Numpy , Pandas <br>
+                                Designing image detection and recognition algorithms</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Solving for India Hackathon by AMD, Google Cloud and GFG</span><br>Qualified for
+                                regionals (North Zone)<br>
+                                Project on Live Mask Detection Web Application using ML<br>
+                                Web app based on HTML, CSS and JavaScript, backend using Flask framework, REST API, ML
+                                model, and Google Cloud Platform<br><br><br></li>
+                            <li><span>Smart India Hackathon</span><br>E-waste Facility Locator Website<br>
+                                Website designed using HTML, CSS, JS, and MERN stack<br>
+                                Backend Deploys ML and </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>SCHOOL(10+2):</span><br>St. John’s School, Tulsipur, Ghazipur (2018 – 2020)
+                                <br><br><br>
+                            </li>
+                            <li><span>COLLEGE(B-TECH CSE):</span><br>Indian Institute Of Information Technology, Sonepat
+                                (2021 – 2025)
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------services-------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>"As a Web Designer, I craft seamless digital experiences using the dynamic trio of HTML, CSS, and
+                        JavaScript. With pixel-perfect precision, I bring designs to life, ensuring a visually stunning
+                        and interactive interface that captivates and engages users."</p>
+                    <a href="http://"></a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-cloud"></i>
+                    <h2>Cloud Computing</h2>
+                    <p>"I specialize in cloud computing, leveraging skills in AWS, Google Cloud Platform, and virtual
+                        machines. My expertise ensures seamless scalability, robust infrastructure, and efficient
+                        resource management, providing top-notch cloud services for diverse applications and
+                        businesses."</p>
+                    <a href="http://"></a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-gear"></i>
+                    <h2>Machine Learning</h2>
+                    <p>"As a machine learning enthusiast, I excel in Python programming and specialize in Convolutional
+                        Neural Networks (CNN) for image recognition. My expertise lies in crafting intelligent solutions
+                        that leverage cutting-edge technology to unlock new possibilities in the world of artificial
+                        intelligence."</p>
+                    <a href="http://"></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- -----------------portifolio-------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/mask.jpg" alt="">
+                    <div class="layer">
+                        <h3>Mask Detection Web App</h3>
+                        <p>This Deep Learning Web Application utilizes a Convolutional Neural Network to process the
+                            person Images and predict if their Mask is ON/OFF accuracy of nearly 98%. Here this model is
+                            made by a pretrained model VGG16.</p>
+                        <a href="https://github.com/Piyush-Pegasus/Live-mask-detector.git" target="_blank"><i
+                                class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.jpg" alt="">
+                    <div class="layer">
+                        <h3>Algorithm Visualizer Web App</h3>
+                        <p>"Algorithm Visualizer is an interactive project showcasing various algorithms through visual
+                            representations. It simplifies complex concepts, aiding learning and understanding of
+                            algorithms through dynamic and engaging visualizations."</p>
+                        <a href="https://github.com/Piyush-Pegasus/AlgorithmVisualizer.git" target="_blank"><i
+                                class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>E-waste Facility Locator Web App</h3>
+                        <p>The proposed website aims to revolutionize e-waste management by providing users with a
+                            comprehensive platform to responsibly dispose of electronic devices. Users can input device
+                            details
+                            or upload images, leveraging AI to fetch product information and highlight harmful and
+                            valuable
+                            components. The system optimizes routes to nearby e-waste facilities using path optimization
+                            algorithms displayed on Google Maps or NavIC. Users can select a facility for self-delivery
+                            or request
+                            a pickup, assigning a facility employee.</p>
+                        <a href="https://sentinals.netlify.app/" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="http://" class="btn">See More</a>
+        </div>
+
+    </div>
+    <!-- -------------------contact------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>mesrivastava.piyush@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9598214776</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/mesrivastava.piyush/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://twitter.com/PiyushaRockstar" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/piyush-srivastava-27b9a8240/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Piyush-Pegasus" target="_blank"><i class="fa-brands fa-github"></i></a>
+
+                    </div>
+                    <a href="images/CV MAIN.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="email" placeholder="Youremail@xyz.com" required>
+                        <textarea name="Message" cols="30" rows="10" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-solid fa-copyright"></i> Piyush. Made with <i class="fa-solid fa-heart"></i>Love.
+            </p>
+        </div>
+    </div>
+</body>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+</html>
